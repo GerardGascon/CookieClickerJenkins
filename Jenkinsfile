@@ -2,8 +2,8 @@ pipeline {
     agent any
     
     environment {
-        UNITY_PATH = "C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Unity.exe" // CAMBIAD ESTO
-        REPO_URL = "https://github.com/Gamedev-Crafters/CookieClickerJenkins.git"
+        UNITY_PATH = "E:\\Programs\\Unity\\2022.3.7f1\\Editor\\Unity.exe" // CAMBIAD ESTO
+        REPO_URL = "https://github.com/GerardGascon/CookieClickerJenkins.git"
     }
     
     stages {
