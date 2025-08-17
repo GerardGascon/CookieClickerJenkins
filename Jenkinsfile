@@ -34,7 +34,7 @@ pipeline {
         stage('Publish') {
         	steps {
         		bat """
-        			butler push "${pwd()/Build}" geri8/jenkins-test:windows
+        			butler push "${pwd()}/Build" geri8/jenkins-test:windows
         		"""
         	}
         }
