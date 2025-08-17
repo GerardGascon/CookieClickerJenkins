@@ -30,5 +30,13 @@ pipeline {
                 archiveArtifacts artifacts: 'Build/**/*', fingerprint: true
             }
         }
+
+        stage('Publish') {
+        	steps {
+        		bat """
+        			butler push "${pwd()/Build}" geri8/jenkins-test:windows
+        		"""
+        	}
+        }
     }
 }
