@@ -22,6 +22,8 @@ namespace CookieClickerCode.Tests.EditMode
 
             sut.Execute(new DateTime());
 
+            Assert.Fail();
+
             Assert.AreEqual(0, cookieClicker.Cookies);
         }
 
